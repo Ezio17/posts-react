@@ -1,33 +1,243 @@
-.App {
+body {
+  margin: 0;
+  background-color: #c7d1c9;
+}
+
+a {
+  color: #1b4b80;;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2e78c9;
+  outline: none;
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.posts-table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.posts-table > tr, td, th {
+  border: 1px solid black;
+  padding: 14px;
+}
+
+.posts-table__info {
+  background-color: #9e9e9e;
+}
+
+.posts-table__info:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+.posts-table__title {
+  background-color: #9e9e9e;
+}
+
+.posts-table__comments {
+  cursor: pointer;
+  color: #1b4b80;
+}
+
+.posts-table__comments:hover {
+  color: #2e78c9;
+}
+
+.posts-table__user {
+  cursor: pointer;
+  color: #1b4b80;
+}
+
+.posts-table__user:hover {
+  color: #2e78c9;
+}
+
+.comments-modal {
+  margin: 15px auto;
+  background-color: #e8e8e8;
+  padding: 10px;
+}
+
+.comment-post {
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.comment-user {
+  font-size: 18px;
+}
+
+.comment-button {
+  margin: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.post {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post__title {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.post__info {
+  width: 70%;
+  background-color: #e6e8ed;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.card {
+  margin: 20px;
+  height: 300px;
+}
+
+.card-comments {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.create {
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.create__input {
+  width: 100%;
+}
+
+.create__form {
+  margin-top: 50px;
+}
+
+.create__textarea {
+  width: 100%;
+}
+
+.create__text-block {
+  margin: 20px 0;
+}
+
+.create__buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.create__buttons-save {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.create__buttons-cancel {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.create-post-button-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0 20px;
+}
+
+.create-post-button {
+  width: 200px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.pagination {
+  width: 30%;
+  margin: 30px auto;
+  background-color: #76a2e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.page-links {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.page-links:hover {
+  color: black;
+}
+
+.active-page {
+  outline: none;
+  color: rgb(255, 215, 0);
+}
+
+.previous-arrow {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.next-arrow {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.list-group-item {
+  background-color: #555c68;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hidden {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pointer {
+  cursor: pointer;
+}
+
+.user-block {
+  margin-top: 40px;
+}
+
+@media all and (max-width: 940px) {
+  .pagination {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+@media all and (max-width: 462px) {
+  .card {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .create {
+    width: 95%;
   }
 }

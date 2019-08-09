@@ -1,11 +1,19 @@
 {
-  "name": "posts-react",
+  "name": "posts",
+  "homepage": "https://ezio17.github.io/posts-react/build/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-scripts": "3.0.1"
+    "bootstrap": "^4.3.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-loader-spinner": "^3.1.2",
+    "react-modal": "^3.9.1",
+    "react-paginate": "^6.3.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "sweetalert2": "^8.15.2",
+    "sweetalert2-react-content": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
