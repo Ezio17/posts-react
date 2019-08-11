@@ -14,24 +14,30 @@ class Post extends React.Component {
 
     this.baseURL = 'https://jsonplaceholder.typicode.com';
     this.postId = props.match.params.id;
+    this.getPost = this.getPost.bind(this);
+    this.getPostComments = this.getPostComments.bind(this);
   }
 
-  componentDidMount() {
-    fetch(`${this.baseURL}/posts/${this.postId}`)
-      .then(response => response.json())
-      .then(post =>
-        fetch(`${this.baseURL}/comments?postId=${this.postId}`)
-          .then(response => response.json())
-          .then(postComments =>
-            this.setState(prevState => {
-              return {
-                postComments,
-                postLoad: true,
-                post: [...prevState.post, post],
-              };
-            })
-          )
-      );
+  async componentDidMount() {
+    let result = await Promise.all([this.getPost(), this.getPostComments()]);
+
+    this.setState(prevState => {
+      return {
+        post: [...prevState.post, result[0]],
+        postComments: result[1],
+        postLoad: true,
+      };
+    });
+  }
+
+  getPost() {
+    return fetch(`${this.baseURL}/posts/${this.postId}`).then(response => response.json());
+  }
+
+  getPostComments() {
+    return fetch(`${this.baseURL}/comments?postId=${this.postId}`).then(response =>
+      response.json()
+    );
   }
 
   render() {
