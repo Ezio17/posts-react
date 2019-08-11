@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/posts-react/build/static/css/main.d62a81d8.chunk.css",
-    "main.js": "/posts-react/build/static/js/main.c5e58d6c.chunk.js",
-    "main.js.map": "/posts-react/build/static/js/main.c5e58d6c.chunk.js.map",
+    "main.js": "/posts-react/build/static/js/main.085c9ddb.chunk.js",
+    "main.js.map": "/posts-react/build/static/js/main.085c9ddb.chunk.js.map",
     "runtime~main.js": "/posts-react/build/static/js/runtime~main.67564db4.js",
     "runtime~main.js.map": "/posts-react/build/static/js/runtime~main.67564db4.js.map",
-    "static/js/2.396b059e.chunk.js": "/posts-react/build/static/js/2.396b059e.chunk.js",
-    "static/js/2.396b059e.chunk.js.map": "/posts-react/build/static/js/2.396b059e.chunk.js.map",
+    "static/js/2.83cb8c38.chunk.js": "/posts-react/build/static/js/2.83cb8c38.chunk.js",
+    "static/js/2.83cb8c38.chunk.js.map": "/posts-react/build/static/js/2.83cb8c38.chunk.js.map",
     "index.html": "/posts-react/build/index.html",
-    "precache-manifest.fee7ad035462a63b179ed823bda1ec43.js": "/posts-react/build/precache-manifest.fee7ad035462a63b179ed823bda1ec43.js",
+    "precache-manifest.1ccd72f47fa6a8282e7a7ae309be7948.js": "/posts-react/build/precache-manifest.1ccd72f47fa6a8282e7a7ae309be7948.js",
     "service-worker.js": "/posts-react/build/service-worker.js",
     "static/css/main.d62a81d8.chunk.css.map": "/posts-react/build/static/css/main.d62a81d8.chunk.css.map"
   }
